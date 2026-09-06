@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#app {
+    flex-grow: 1;
+}
+
+.hero-slide {
+    height: 400px;
+    background-size: cover;
+}
+
+.category-card {
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+    font-weight: bold;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.admin-tab {
+    min-height: 300px;
+}
+
+/* Changes the hover state of the red Bootstrap buttons (Delete/Remove) to black */
+.btn-danger:hover {
+    background-color: black !important;
+    border-color: black !important;
+    color: white !important;
+}
+
+/* Optional: Ensures all standard links hover to black instead of their default color */
+a:hover {
+    color: black !important;
+}
